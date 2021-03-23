@@ -20,7 +20,7 @@ def test_diff():
     return 6*x - 7
   assert abs(diff(g, 3, 0.01) - g_prime(3)) <= 0.0001, "This function failed"
   
-print(test_diff())
+test_diff()
 
 def application():
   print(f"{diff(q, 0, 0.01):.4f}")
@@ -28,4 +28,4 @@ def application():
   print(f"{diff(e, math.pi*2, 0.01):.4f}")
   print(f"{diff(r, 1, 0.01):.4f}")
 
-print(application())
+application()
